@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgba(0, 75, 151, 0.562);
+    background-image: url('https://www.webevolution.com.co/wp-content/uploads/2018/02/experi3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+
+.logo {
+    margin: 3% auto;
+    display: block;
+}
+
+h1 {
+    color: rgb(255, 197, 0) !important;
+    padding-bottom: 5%;
+    font-size: 40px;
+}
+
+@media (max-width:1200px) {
+    h1 {
+        color: rgb(255, 197, 0) !important;
+        padding-bottom: 5%;
+        font-size: 2rem;
+    }
+    .main input[type="submit"] {
+        width: 60% !important;
+        margin: 10px auto !important;
+        padding: 13px 0 !important;
+    }
+    .main {
+        width: 50% !important;
+    }
+}
+
+@media (max-width:968px) {
+    h1 {
+        color: rgb(255, 197, 0) !important;
+        padding-bottom: 5%;
+        font-size: 2rem;
+    }
+    .main input[type="submit"] {
+        width: 60% !important;
+        margin: 10px auto !important;
+        padding: 13px 0 !important;
+    }
+    .main {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:692px) {
+    h1 {
+        color: rgb(255, 197, 0) !important;
+        padding-bottom: 5%;
+        font-size: 1.5rem;
+    }
+    .main input[type="submit"] {
+        width: 80% !important;
+        margin: 10px auto !important;
+        padding: 13px 0 !important;
+    }
+    .main {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:410px) {
+    h1 {
+        color: rgb(255, 197, 0) !important;
+        padding-bottom: 5%;
+        font-size: 30px;
+    }
+    .main input[type="submit"] {
+        width: 80% !important;
+        margin: 10px auto !important;
+        padding: 13px 0 !important;
+    }
+    .main {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:251px) {
+    h1 {
+        color: rgb(255, 197, 0) !important;
+        padding-bottom: 5%;
+        font-size: 20px;
+    }
+    .main input[type="submit"] {
+        width: 100% !important;
+        margin: 10px auto !important;
+        padding: 13px 0 !important;
+    }
+    .main {
+        width: 80% !important;
+    }
+}
+
+h2 {
+    color: rgb(255, 255, 255) !important;
+    padding-bottom: 2%;
+    text-align: left;
+    font-size: 18px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    background: rgb(0, 74, 150);
+    padding: 5px 15px;
+    color: #fff;
+    border: 0 none;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    opacity: .8;
+}
+
+.main input[type="submit"] {
+    width: 40%;
+    margin: 10px auto;
+    padding: 13px 0;
+}
+
+.main {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.658);
+    text-align: center;
+    border-radius: 10px;
+    margin: 5% auto 0 auto;
+    padding: 3%;
+    position: relative;
+    opacity: 1;
+}
+
+.error {
+    background-color: #E74F4F;
+    top: 2%;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+/* =================================
+form validation real time
+================================= */
+
+.formularioNewNew__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formularioNew__grupo-input {
+    position: relative;
+}
+
+.formularioNew__input_text_area {
+    width: 100%;
+    background: #E8E9E9;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formularioNew__input {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: .3s ease all;
+    width: 97%;
+    height: 25px;
+    margin: 0 0 15px;
+    padding: 10px 1%;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.151) !important;
+    color: white !important;
+}
+
+.formularioNew__input:focus {
+    border: 3px solid #11547D;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formularioNew__input-error {
+    font-size: 12px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    display: none;
+    color: red;
+    text-align: left;
+}
+
+.formularioNew__input-error-activo {
+    display: block;
+}
+
+.formularioNew__icon_input {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.fas {
+    color: #0C3860;
+}
+
+.formularioNew__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formularioNew__checkbox {
+    margin-right: 10px;
+}
+
+.formularioNew__grupo-terminos,
+.formularioNew__mensaje,
+.formularioNew__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formularioNew__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formularioNew__mensaje-activo {
+    display: block;
+}
+
+.formularioNew__mensaje p {
+    margin: 0;
+}
+
+.formularioNew__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formularioNew__btn {
+    height: 45px;
+    width: 50%;
+    background: #2B9C98;
+    color: #fff;
+    font-weight: bold;
+    font-family: Cittis;
+    font-size: 23px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formularioNew__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formularioNew__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formularioNew__mensaje-exito-activo {
+    display: block;
+}
+
+
+/* =================================
+Estilos para Validacion
+================================= */
+
+.formularioNew__grupo-correcto .formularioNew__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formularioNew__grupo-correcto .formularioNew__label {
+    color: #11547D;
+    opacity: 1;
+}
+
+.formularioNew__grupo-correcto .formularioNew__input {
+    border: 3px solid #11547D;
+}
+
+.formularioNew__grupo-incorrecto .formularioNew__label {
+    color: #bb2929;
+}
+
+.formularioNew__grupo-incorrecto .formularioNew__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formularioNew__grupo-incorrecto .formularioNew__input {
+    border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 968px) {
+    .formularioNew {
+        grid-template-columns: 1fr;
+    }
+    .formularioNew__grupo-terminos,
+    .formularioNew__mensaje,
+    .formularioNew__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    .formularioNew__btn {
+        width: 100%;
+    }
+}
